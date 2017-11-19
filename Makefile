@@ -1,5 +1,6 @@
 all: bib tex
 	pdflatex article.tex
+	evince article.pdf
 
 bib: article.bib
 	pdflatex article.tex

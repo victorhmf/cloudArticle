@@ -51,11 +51,118 @@
 \section{Referencial Teórico}
 
 Nesta seção é apresentado os conceitos da computação em nuvem e da computação em nuvem
-mobile, bem como seus modelos e arquiteturas.
+móvel, bem como seus modelos e arquiteturas.
 
 \subsection{Computação em Nuvem}
 
-\subsection{Computação em Nuvem Mobile}
+\subsection{Computação em Nuvem Móvel}
+
+Aepona \cite{aepona2010} descreve a computação em nuvem móvel ou MCC(Mobile Cloud Computing) como um novo paradigma para aplicações 
+móveis pelo qual o processamento e armazenamento de dados são movidos do dispositivo móvel para plataformas de computação
+poderosas e centralizadas, localizadas em nuvens. Esses aplicativos são então acessados através da conexão sem fio com base em
+um cliente ou navegador web nativo nos dispositivos móveis. 
+
+Resumidamente, o MCC fornece aos usuários móveis os serviços de processamento e armazenamento de dados nas nuvens.
+Os dispositivos móveis não precisam de uma configuração poderosa (por exemplo, velocidade da CPU e capacidade de memória)
+porque todos os módulos de computação complicados podem ser processados nas nuvens \cite{liu2010}.
+
+De acordo com Atta \cite{atta2013}, o principal objetivo da computação em nuvem é facilitar as pequenas empresas,
+de forma econômica, fornecendo acesso a tecnologias que estão além do alcance deles. Ao usar a computação em nuvem, 
+as pequenas empresas podem expandir seus recursos de TI com base em demandas de serviço e aproveitar oportunidades 
+de crescimento para competir com outras empresas dentro do mercado.
+
+Alternativamente, o principal objetivo da computação em nuvem móvel é fornecer experiências de usuários aprimoradas
+aos usuários mobile que podem ser, em termos de tempo de computação, vida útil da bateria, comunicação, serviços e 
+aprimoramento de recursos de dispositivos móveis.
+
+Portanto, ambas as tecnologias têm objetivos e desafios diferentes. Por exemplo, na computação em nuvem móvel,
+a conectividade de rede, a quantidade de comunicação, o custo de utilização da largura de banda e a energia do 
+dispositivo móvel são considerados os principais problemas, o que pode não ser o caso na computação em nuvem.
+
+No entanto, os modelos de aplicativos de nuvem móvel são baseados no modelo de serviço padrão da nuvem que inclui 
+Infraestrutura como Serviço (IaaS), Plataforma como um serviço (PaaS) e Software as a Service (SaaS). Portanto, 
+com base no funcionamento dos modelos de aplicativos, qualquer uma dessas camadas de serviço pode ser utilizada.
+Alguns dos serviços bem conhecidos para computação em nuvem móvel incluem Amazon Elastic Compute Cloud (EC2) \cite{amazon}, 
+Google App Engine \cite{googleapp} e Microsoft Azure \cite{azure}.
+
+Atta \cite{atta2013} diz que não existe uma definição padrão ou caracterização de recursos da computação em nuvem móvel.
+Portanto, apresenta uma comparação possível de computação em nuvem e computação em nuvem móvel, em termos de significância 
+das questões listadas conforme tabela \ref{comparisonClouds}.
+
+% ######## init table ########
+\begin{table}[h]
+  \centering
+  % distancia entre a linha e o texto
+  {\renewcommand\arraystretch{1.25}
+  \begin{tabular}{ l l l }
+    \cline{1-1}\cline{2-2}\cline{3-3}  
+    \multicolumn{1}{|c|}{\textbf{Questões}} &
+    \multicolumn{1}{c|}{\textbf{Computação em nuvem}} &
+    \multicolumn{1}{c|}{\textbf{Computação em nuvem móvel}}
+    \\  
+    \cline{1-1}\cline{2-2}\cline{3-3}  
+    \multicolumn{1}{|c|}{Energia do dispositivo} &
+    \multicolumn{1}{c|}{x} &
+    \multicolumn{1}{c|}{ok}
+    \\  
+    \cline{1-1}\cline{2-2}\cline{3-3}  
+    \multicolumn{1}{|c|}{Custo de utilização da banda} &
+    \multicolumn{1}{c|}{x} &
+    \multicolumn{1}{c|}{ok}
+    \\  
+    \cline{1-1}\cline{2-2}\cline{3-3}  
+    \multicolumn{1}{|c|}{Conectividade de rede} &
+    \multicolumn{1}{c|}{x} &
+    \multicolumn{1}{c|}{ok}
+    \\  
+    \cline{1-1}\cline{2-2}\cline{3-3}  
+    \multicolumn{1}{|c|}{Mobilidade} &
+    \multicolumn{1}{c|}{x} &
+    \multicolumn{1}{c|}{ok}
+    \\  
+    \cline{1-1}\cline{2-2}\cline{3-3}  
+    \multicolumn{1}{|c|}{Largura de Banda} &
+    \multicolumn{1}{c|}{x} &
+    \multicolumn{1}{c|}{ok}
+    \\  
+    \cline{1-1}\cline{2-2}\cline{3-3}  
+    \multicolumn{1}{|c|}{Segurança} &
+    \multicolumn{1}{c|}{ok} &
+    \multicolumn{1}{c|}{ok}
+    \\  
+    \hline
+    
+  \end{tabular} }
+  \caption{Comparação entre computação em nuvem e computação em nuvem móvel} 
+  \label{comparisonClouds}
+\end{table}
+
+
+\subsubsection{Arquitetura da computação em nuvem móvel}
+
+
+Na atual arquitetura de nuvem móvel, os dispositivos móveis podem acessar os serviços da nuvem de duas maneiras,
+ou seja, através da rede móvel (rede de telecomunicações) ou através de pontos de acesso, conforme mostrado na Figura \ref{arquiteturaMCC}.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale= 0.5]{figuras/arquiteturaMCC.png}
+  \caption{Arquitetura da computação em nuvem móvel}
+  \label{arquiteturaMCC}
+\end{figure}
+
+No caso da rede móvel (provedor de rede de telecomunicações), os dispositivos móveis, como os celulares smartphones \cite{satelite},
+estão conectados a uma rede móvel através de uma Estação Base (BS) ou através de um link de satélite. No entanto, 
+se os smartphones não estiverem equipados com um módulo de comunicação por satélite, são utilizados dispositivos 
+externos de comunicação por satélite \cite{spot}. As redes de telecomunicações estão mais conectadas à Internet e 
+fornecem conectividade com a Internet aos usuários. Portanto, se os usuários tiverem conectividade de rede móvel, 
+os usuários podem acessar serviços baseados em nuvem através da Internet.
+
+No caso do ponto de acesso, os usuários móveis se conectam aos pontos de acesso através do Wi-Fi, que está mais conectado 
+ao provedor de serviços de Internet para fornecer conectividade com a Internet aos usuários. Portanto, os usuários da nuvem móvel
+podem acessar serviços baseados em nuvem sem utilizar serviços de telecomunicações, o que pode cobrar por tráfego de dados. 
+Além disso, as conexões baseadas em Wi-Fi oferecem pouca latência e consomem menos energia em comparação com as conexões 3G \cite{cuervo2010}.
+Conseqüentemente, usuários da nuvem móvel preferem usar conexões Wi-Fi sempre que acessíveis.
 
 \section{Metodologia}
 
@@ -176,7 +283,7 @@ Após selecionar as publicações, foi utilizado o seguinte critério para a exc
 
 \section{Considerações Finais}
 
-\bibliographystyle{article}
+\bibliographystyle{abbrv}
 \bibliography{article}
 
 \end{document}
