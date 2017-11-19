@@ -39,9 +39,21 @@
   abstract
 \end{abstract}
 
+\begin{itemize}
+ \item Keywords: mobile cloud computing models, MCC models, mobile cloud models, mobile cloud architecture, mobile cloud
+ computing, MCC, mobile computing, mobile cloud literature review, mobile cloud challenges, challenges
+\end{itemize}
+
+
 \begin{resumo} 
   resumo
 \end{resumo}
+
+\begin{itemize}
+ \item Palavras-chave: modelos de computação em nuvem em dispositivos movéis, Modelos MCC, modelos de nuvem em dispositivos
+ movéis, arquitetura de nuvem em dispositivos movéis, computação em nuvem em dispositivos movéis, MCC, computação em dispositivos
+ movéis, revisão da literatura na nuvem em dispositivos movéis, desafios de nuvem em dispositivos movéis, desafios.
+\end{itemize}
 
 
 \section{Introdução}
@@ -169,7 +181,7 @@ Conseqüentemente, usuários da nuvem móvel preferem usar conexões Wi-Fi sempr
 Para a elaboração deste estudo, foi realizada uma revisão sistemática de literatura,
 ou SRL(Systematic Literature Review), de acordo com os critérios e o modelo adotado 
 por \cite{kitchenham2012}. Para isso, a revisão foi divida em três fases: planejamento,
-condução e análise dos resultados, onde cada fase será melhor detalhada nas subseções seguintes.
+execução e análise dos resultados, onde cada fase será melhor detalhada nas subseções seguintes.
 A fase de Análise dos resultados, por comtemplar a parte principal desse trabalho, será detalhada
 na próxima seção.
 
@@ -230,12 +242,16 @@ A tabela \ref{pico} mostra como o método PICO foi definido.
 Com os principais argumentos que abordam a questão de pesquisa deste estudo, foi possível a confecção da string de busca,
 para uma busca mais precisa sobre o tema. Abaixo segue a primeira string definida:
 
-(“mobile cloud computing models” OR “MCC models”) AND ("Mobile cloud models") AND ("Mobile cloud architecture") AND (“Mobile cloud computing” OR “MCC”)
+(“mobile cloud computing models” OR “MCC models”) AND ("Mobile cloud models") AND ("Mobile cloud architecture") AND (“Mobile
+cloud computing” OR “MCC”)
 
-Após um refinamento da string acima, foi elaborada outra string com mais argumentos, que nos possibilitou uma maior precisão sobre o matérial encontrado
+Após um refinamento da string acima, foi elaborada outra string com mais argumentos, que nos possibilitou uma maior precisão
+sobre o matérial encontrado
 para a escrita desta SRL. Abaixo segue a segunda string definida:
 
-(“mobile cloud computing models” OR “MCC models”) AND ("Mobile cloud models") AND ("Mobile cloud architecture") AND (“Mobile cloud computing” OR “MCC”) AND (“mobile computing”) AND (“mobile cloud literature review”) AND (“mobile cloud challenges”) AND (“challenges”)
+(“mobile cloud computing models” OR “MCC models”) AND ("Mobile cloud models") AND ("Mobile cloud architecture") AND (“Mobile
+cloud computing” OR “MCC”) AND (“mobile computing”) AND (“mobile cloud literature review”) AND (“mobile cloud challenges”) AND
+(“challenges”)
 
 \subsubsection{Bases de busca}
 
@@ -268,6 +284,48 @@ Após selecionar as publicações, foi utilizado o seguinte critério para a exc
   \item CE1. O abstract da publicação foge do tema proposto.
 \end{itemize}
 
+\subsection{Execução}
+
+Após a definição da string de busca, foi realizada a execução da busca nas bases citadas anteriormente. Realizada a primeira
+busca, foram encontrados diversas publicações, utilizando os critérios de inclusão e exclusão para filtrar as publicações
+encontradas, foi feita a extração dos principais dados para a realização dessa SRL. Realizando essa filtragem através dos
+critérios de inclusão e exclusão, obtivemos a seguinte tabela \ref{publicações} com a quantidade de publicações relevantes
+encontradas em cada base:
+
+
+\begin{table}[h]
+ \centering
+% distancia entre a linha e o texto
+ {\renewcommand\arraystretch{1.25}
+ \begin{tabular}{ l l }
+  \cline{1-1}\cline{2-2}  
+    \multicolumn{1}{|p{4.500cm}|}{\textbf{Base pesquisada}} &
+    \multicolumn{1}{p{4.500cm}|}{\textbf{Publicações encontradas}}
+  \\  
+  \cline{1-1}\cline{2-2}  
+    \multicolumn{1}{|p{4.500cm}|}{\textbf{IEEE Xplore} \centering } &
+    \multicolumn{1}{p{4.500cm}|}{7 \centering }
+  \\  
+  \cline{1-1}\cline{2-2}  
+    \multicolumn{1}{|p{4.500cm}|}{\textbf{ACM Digital Library} \centering } &
+    \multicolumn{1}{p{4.500cm}|}{4 \centering }
+  \\  
+  \cline{1-1}\cline{2-2}  
+    \multicolumn{1}{|p{4.500cm}|}{\textbf{SpringerLink} \centering } &
+    \multicolumn{1}{p{4.500cm}|}{2 \centering }
+  \\  
+  \cline{1-1}\cline{2-2}  
+    \multicolumn{1}{|p{4.500cm}|}{\textbf{ScienceDirect} \centering } &
+    \multicolumn{1}{p{4.500cm}|}{1 \centering }
+  \\  
+  \hline
+
+ \end{tabular} }
+ \caption{Publicações relevantes encontradas} 
+ \label{publicações} 
+\end{table}
+
+
 %Exemplo para colocar figura
 
 % \begin{figure}[ht]
@@ -277,9 +335,33 @@ Após selecionar as publicações, foi utilizado o seguinte critério para a exc
   % \label{fig:exampleFig1}
 % \end{figure}
 
-\subsection{Condução}
-
 \section{Análise dos Resultados}
+
+Posteriormente a leitura das publicações, foi possível encontrar a resposta para a pergunta que guiou esta SRL.
+
+QP: Quais os principais desafios da computação em nuvem em aplicativos móveis?
+
+Foi possível constatar vários desafios enfrentados pela computação em nuvem em aplicativos móveis, estão listados abaixo os
+principais desafios encontrados durante a análise das publicações:
+
+\begin{itemize}
+ \item Segundo \cite{kumar2014}, devido ao pouco armazenamento físico e a baixa quantidade de bateria que os dispositivos
+ possuem, há uma tendência a recorrer ao “offloading computation”, contudo se torna necessário gastar mais tempo para lidar com
+ segurança e confiabilidade, gerando assim um grande desafio;
+ 
+ \item Outro desafio, é a segurança dos dados salvos em nuvem. Por mais que a tecnologia avance, terá uma grande dificuldade no
+ quesito segurança, pois deve-se tomar cuidado não apenas com a segurança do aplicativo móvel, mas também no sistema de
+ armazenamento em nuvem que se está usando, segundo \cite{kumar2014};
+ 
+ \item A propriedade de dados, é um dos desafios da computação, segundo \cite{alizadeh2013}, uma pessoa pode comprar um serviço 
+ de mídia(músicas, filmes e vídeos) disponível na nuvem e armazenar fisicamente em seu dispositivo, contudo pode vir a ocorrer da
+ prestadora de serviços vir a falir e remover aquele conteúdo, fazendo com que a pessoa perca o serviço comprado;
+ 
+ \item Para a utilização do serviço em nuvem é necessário ter acesso a rede. É necessário uma conexão estável e rápida com a
+ Internet para que o usuário tenha acesso as informações salvas na nuvem \cite{alizadeh2013}.
+ 
+\end{itemize}
+
 
 \section{Considerações Finais}
 
